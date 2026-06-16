@@ -6,17 +6,17 @@
 export const siteConfig = {
   // Swap your real brand name in one place: set NEXT_PUBLIC_BRAND_NAME in your
   // env (or just edit the fallback string here). It propagates sitewide.
-  name: process.env.NEXT_PUBLIC_BRAND_NAME || "FedBenefits Navigator",
-  shortName: process.env.NEXT_PUBLIC_BRAND_NAME || "FedBenefits Navigator",
-  tagline: "Federal Benefits Are Complicated. Your Next Step Shouldn’t Be.",
+  name: process.env.NEXT_PUBLIC_BRAND_NAME || "Fed Up Annuitant",
+  shortName: process.env.NEXT_PUBLIC_BRAND_NAME || "Fed Up Annuitant",
+  tagline: "Real Help Navigating OPM Disability Retirement, Delays & Denials",
   description:
-    "Plain-English guides, checklists, calculators, and decision tools for federal employees navigating OPM retirement, FERS disability, FEHB, FEGLI, SSDI offsets, and benefit delays. Educational information only.",
-  // Update this to your deployed domain before launch.
-  url: process.env.NEXT_PUBLIC_SITE_URL || "https://www.example.com",
+    "Plain-English guides, checklists, calculators, and decision tools for federal employees navigating OPM disability retirement, processing delays, denials, FEHB, FEGLI, and SSDI offsets. Educational information only.",
+  // Production domain (WordPress custom domain: fedupannuitant.com).
+  url: process.env.NEXT_PUBLIC_SITE_URL || "https://fedupannuitant.com",
   locale: "en-US",
-  email: "hello@example.com",
+  email: "hello@fedupannuitant.com",
   // Used for Organization JSON-LD + footer.
-  legalEntity: "FedBenefits Navigator LLC (placeholder — verify before publication)",
+  legalEntity: "Fed Up Annuitant (placeholder — verify legal entity before publication)",
   social: {
     pinterest: "https://www.pinterest.com/",
     youtube: "https://www.youtube.com/",

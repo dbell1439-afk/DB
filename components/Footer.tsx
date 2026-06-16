@@ -17,9 +17,9 @@ export default function Footer() {
             <div className="flex items-center gap-2 font-semibold text-white">
               <span
                 aria-hidden
-                className="flex h-8 w-8 items-center justify-center rounded-lg bg-white/10 text-sm font-bold text-gold"
+                className="flex h-8 w-8 items-center justify-center rounded-lg bg-white/10 text-xs font-bold text-gold"
               >
-                FB
+                FUA
               </span>
               {siteConfig.name}
             </div>

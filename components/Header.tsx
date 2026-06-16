@@ -17,9 +17,9 @@ export default function Header() {
         >
           <span
             aria-hidden
-            className="flex h-8 w-8 items-center justify-center rounded-lg bg-navy-900 text-sm font-bold text-gold"
+            className="flex h-8 w-8 items-center justify-center rounded-lg bg-navy-900 text-xs font-bold text-gold"
           >
-            FB
+            FUA
           </span>
           <span className="text-base sm:text-lg">{siteConfig.name}</span>
         </Link>
