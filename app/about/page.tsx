@@ -25,6 +25,20 @@ export default function AboutPage() {
 
       <Section>
         <div className="prose-site max-w-3xl">
+          <h2>Our story</h2>
+          <p>
+            {siteConfig.name} was founded by a veteran who spent a long federal
+            career — at the GS-11 level — inside the systems most people only meet
+            once, under stress: OPM disability retirement, FERS, SSA coordination,
+            and VA benefits navigation. Add Air Force Reserve service and a 100%
+            VA rating, and you get a rare combination: someone who has worked these
+            processes <em>and</em> lived them.
+          </p>
+          <p className="text-sm text-slate-500">
+            (Founder note — personalize this paragraph with your name and brand
+            voice before publication. Keep claims accurate and verifiable.)
+          </p>
+
           <h2>Why this exists</h2>
           <p>
             Federal benefits guidance is everywhere, but most of it is either too

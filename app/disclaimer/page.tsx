@@ -30,6 +30,17 @@ export default function DisclaimerPage() {
         relationship.
       </p>
 
+      <h2>VA claims: education only, never claims preparation</h2>
+      <p>
+        We provide general education about how VA benefits can intersect with
+        federal civilian benefits. We do <strong>not</strong> prepare, file,
+        complete, or assist with VA disability claims or appeals, and we{" "}
+        <strong>never charge any fee for VA claims preparation</strong>. For help
+        with a VA claim, work with a VA-accredited representative, an accredited
+        attorney or agent, or a Veterans Service Organization (VSO) — many help
+        at no cost. Nothing here is legal advice or representation.
+      </p>
+
       <h2>No outcome guarantees</h2>
       <p>
         We do not guarantee any result, approval, or outcome with OPM, SSA, the

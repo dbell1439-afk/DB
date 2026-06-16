@@ -25,7 +25,7 @@ export default function ResourcesPage() {
       />
 
       <Section>
-        <AffiliateDisclosure className="mb-8" />
+        <AffiliateDisclosure amazon className="mb-8" />
         <div className="space-y-12">
           {affiliateCategories.map((category) => {
             const links = affiliateLinks.filter((l) => l.category === category);

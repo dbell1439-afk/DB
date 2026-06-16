@@ -102,9 +102,19 @@ export default function Footer() {
             used only for identification and reference.
           </p>
           <p>
+            <span className="font-semibold text-white">
+              No VA claims preparation.
+            </span>{" "}
+            We provide general education only. We do not prepare, file, or assist
+            with VA disability claims, and we never charge any fee for VA claims
+            preparation. For help with a VA claim, contact a VA-accredited
+            representative, attorney, or Veterans Service Organization (VSO).
+          </p>
+          <p>
             <span className="font-semibold text-white">Affiliate disclosure.</span>{" "}
             Some links may be affiliate links. If you purchase through them, we
-            may earn a commission at no additional cost to you.
+            may earn a commission at no additional cost to you. As an Amazon
+            Associate, we earn from qualifying purchases.
           </p>
         </div>
 

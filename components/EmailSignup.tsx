@@ -44,13 +44,30 @@ export default function EmailSignup({
       const source =
         utmSource ||
         (typeof window !== "undefined" ? window.location.pathname : "site");
-      // TODO: replace with real provider call. Payload is ready to forward.
-      const payload = { email, tag, utm_source: source, provider: siteConfig.emailProvider };
-      if (process.env.NODE_ENV !== "production") {
-        // eslint-disable-next-line no-console
-        console.log("EmailSignup payload (wire to provider):", payload);
+
+      const ckFormId = process.env.NEXT_PUBLIC_CONVERTKIT_FORM_ID;
+      if (siteConfig.emailProvider === "convertkit" && ckFormId) {
+        // Kit (ConvertKit) public form submission. Configure the tag/segment on
+        // the form in Kit; we still pass utm + tag fields as custom fields.
+        const body = new FormData();
+        body.append("email_address", email);
+        body.append("fields[tag]", tag);
+        body.append("fields[utm_source]", source);
+        const res = await fetch(
+          `https://app.kit.com/forms/${ckFormId}/subscriptions`,
+          { method: "POST", body, headers: { Accept: "application/json" } },
+        );
+        if (!res.ok) throw new Error("Subscribe failed");
+      } else {
+        // Demo mode (no provider configured yet). Payload is ready to forward.
+        const payload = { email, tag, utm_source: source, provider: siteConfig.emailProvider };
+        if (process.env.NODE_ENV !== "production") {
+          // eslint-disable-next-line no-console
+          console.log("EmailSignup payload (wire to provider):", payload);
+        }
+        await new Promise((r) => setTimeout(r, 400));
       }
-      await new Promise((r) => setTimeout(r, 400));
+
       setStatus("done");
       setEmail("");
     } catch {

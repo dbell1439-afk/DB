@@ -24,6 +24,18 @@ export default function VeteranBenefitsGuide() {
       leadMagnetSlug="opm-retirement-readiness-checklist"
       leadMagnetLabel="The OPM Retirement Readiness Checklist."
     >
+      <div className="not-prose mb-6 rounded-2xl border-l-4 border-gold bg-ivory-warm p-5 text-sm text-slate-700">
+        <p className="font-semibold text-navy-900">
+          Education only — we don’t prepare VA claims
+        </p>
+        <p className="mt-1">
+          This guide explains how VA and federal civilian benefits can interact.
+          We do not prepare, file, or charge any fee for VA disability claims. For
+          claim help, contact a VA-accredited representative, attorney, or a
+          Veterans Service Organization (VSO).
+        </p>
+      </div>
+
       <h2>Where overlap shows up</h2>
       <p>
         VA disability and federal civilian benefits are separate systems that can

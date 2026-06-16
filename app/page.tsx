@@ -7,6 +7,7 @@ import LeadMagnetCard from "@/components/LeadMagnetCard";
 import ProductCard from "@/components/ProductCard";
 import ResourceCard from "@/components/ResourceCard";
 import BlogCard from "@/components/BlogCard";
+import BookCard from "@/components/BookCard";
 import CalculatorCard from "@/components/CalculatorCard";
 import EmailSignup from "@/components/EmailSignup";
 import DisclaimerBox from "@/components/DisclaimerBox";
@@ -17,6 +18,7 @@ import { leadMagnets } from "@/data/leadMagnets";
 import { products } from "@/data/products";
 import { affiliateLinks } from "@/data/affiliateLinks";
 import { articles } from "@/data/articles";
+import { books } from "@/data/books";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata: Metadata = pageMeta({
@@ -150,7 +152,7 @@ export default function HomePage() {
         title="Recommended tools & resources"
         subtitle="Independent tools that may help you organize and prepare. Compare options with a licensed professional."
       >
-        <AffiliateDisclosure className="mb-6" />
+        <AffiliateDisclosure amazon className="mb-6" />
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {featuredResources.map((r) => (
             <ResourceCard key={r.slug} link={r} />
@@ -159,6 +161,23 @@ export default function HomePage() {
         <div className="mt-6">
           <CTAButton href="/resources" variant="secondary">
             See all recommended resources →
+          </CTAButton>
+        </div>
+      </Section>
+
+      {/* Books & coloring books */}
+      <Section
+        title="Books & coloring books"
+        subtitle="Veteran-created titles — starting with ‘Same Page, Same Day,’ a synchronized coloring ritual for deployed parents and their kids."
+      >
+        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {books.slice(0, 3).map((b) => (
+            <BookCard key={b.slug} book={b} />
+          ))}
+        </div>
+        <div className="mt-6">
+          <CTAButton href="/books" variant="secondary">
+            See all books →
           </CTAButton>
         </div>
       </Section>

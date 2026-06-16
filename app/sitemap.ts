@@ -22,6 +22,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/calculators/fegli-reduction",
     "/calculators/opm-delay-tracker",
     "/toolkits",
+    "/books",
     "/resources",
     "/consultation",
     "/blog",

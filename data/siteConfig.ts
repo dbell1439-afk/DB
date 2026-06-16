@@ -18,8 +18,12 @@ export const siteConfig = {
   social: {
     pinterest: "https://www.pinterest.com/",
     youtube: "https://www.youtube.com/",
+    tiktok: "https://www.tiktok.com/",
     linkedin: "https://www.linkedin.com/",
   },
+
+  // Free landing-page / link-in-bio hub (Beacons.ai) used alongside the site.
+  beaconsUrl: "https://beacons.ai/",
 
   // Primary calls to action reused across the site.
   cta: {
@@ -34,8 +38,9 @@ export const siteConfig = {
   },
 
   // Email provider switch. Set to the provider you wire up in EmailSignup.tsx.
+  // Default is Kit (ConvertKit); set NEXT_PUBLIC_CONVERTKIT_FORM_ID to go live.
   // One of: "convertkit" | "beehiiv" | "mailerlite" | "tally" | "placeholder"
-  emailProvider: "placeholder" as
+  emailProvider: "convertkit" as
     | "convertkit"
     | "beehiiv"
     | "mailerlite"
@@ -56,6 +61,7 @@ export const primaryNav: NavItem[] = [
   { label: "Guides", href: "/fers-disability-retirement" },
   { label: "Calculators", href: "/calculators" },
   { label: "Toolkits", href: "/toolkits" },
+  { label: "Books", href: "/books" },
   { label: "Resources", href: "/resources" },
   { label: "Blog", href: "/blog" },
   { label: "Consultation", href: "/consultation" },
