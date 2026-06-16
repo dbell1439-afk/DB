@@ -6,8 +6,11 @@
 import { articles } from "../data/articles.ts";
 import { getSources } from "../data/sources.ts";
 
+// Full mapping of every exported article -> WordPress category IDs.
+// Batch 1 (already published): the 7 OPM-disability-core articles.
+// Batch 2 (this run): the 5 broader benefits articles.
 const TARGETS: Record<string, number[]> = {
-  // slug -> WordPress category IDs (existing categories on the site)
+  // --- Batch 1 ---
   "fers-disability-retirement-what-to-know-before-applying": [22631], // Start Here
   "why-opm-disability-retirement-requires-an-ssdi-application": [22631],
   "opm-retirement-delays-what-to-track-while-you-wait": [789977082], // Delays
@@ -15,7 +18,22 @@ const TARGETS: Record<string, number[]> = {
   "how-to-build-a-federal-benefits-binder": [789977081],
   "opm-interim-pay-what-it-is-and-why-it-may-be-lower": [789977082], // Delays
   "federal-disability-retirement-vs-regular-retirement": [22631], // Start Here
+  // --- Batch 2 ---
+  "how-the-fers-disability-retirement-ssdi-offset-works": [789977084], // Offsets & Pay Calculations
+  "fehb-in-retirement-questions-before-you-separate": [22631], // Start Here (no FEHB category yet)
+  "fegli-at-retirement-75-50-or-no-reduction": [22631],
+  "federal-employee-rif-benefits-questions-to-ask-immediately": [22631],
+  "veteran-federal-employees-overlapping-benefits-issues": [22631],
 };
+
+// Only emit this batch (the 5 not yet pushed).
+const ONLY = new Set([
+  "how-the-fers-disability-retirement-ssdi-offset-works",
+  "fehb-in-retirement-questions-before-you-separate",
+  "fegli-at-retirement-75-50-or-no-reduction",
+  "federal-employee-rif-benefits-questions-to-ask-immediately",
+  "veteran-federal-employees-overlapping-benefits-issues",
+]);
 
 const DISCLAIMER =
   "Educational information only. Fed Up Annuitant provides general education and is not legal, financial, medical, tax, or government benefit advice, and is not affiliated with OPM, SSA, the VA, or any government agency. We do not prepare or charge any fee for VA claims. For advice about your situation, consult a licensed professional.";
@@ -59,7 +77,7 @@ function sourceList(ids: string[]): string {
   return `<!-- wp:list -->\n<ul class="wp-block-list">\n${li}\n</ul>\n<!-- /wp:list -->`;
 }
 
-const out = Object.keys(TARGETS).map((slug) => {
+const out = Object.keys(TARGETS).filter((slug) => ONLY.has(slug)).map((slug) => {
   const a = articles.find((x) => x.slug === slug);
   if (!a) throw new Error(`Article not found: ${slug}`);
 
