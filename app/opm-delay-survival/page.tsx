@@ -17,7 +17,7 @@ export default function OpmDelaySurvival() {
       intro="A stalled OPM claim is easier to escalate when you can show a clean, dated record. Here’s the system: track the milestones, log every contact, and keep your documentation tight."
       crumbs={[{ label: "OPM Delay Survival Center", href: "/opm-delay-survival" }]}
       primaryCta={{ label: "Open the OPM Delay Tracker", href: "/calculators/opm-delay-tracker" }}
-      secondaryCta={{ label: "Free call log & escalation tracker", href: "/start-here?lm=opm-delay-call-log-escalation-tracker#free-checklist" }}
+      secondaryCta={{ label: "Free call log & escalation tracker", href: "/free/opm-delay-call-log-escalation-tracker" }}
       sourceIds={["opm-retirement", "opm-disability"]}
       relatedProductSlugs={["opm-delay-escalation-tracker", "federal-retirement-document-organizer"]}
       emailTag="lm-opm-delay"

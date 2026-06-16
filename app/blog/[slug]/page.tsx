@@ -123,7 +123,7 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
                 </p>
                 <p className="mt-1 text-sm text-slate-600">{magnet.description}</p>
                 <CTAButton
-                  href={`/start-here?lm=${magnet.slug}#free-checklist`}
+                  href={`/free/${magnet.slug}`}
                   variant="gold"
                   size="sm"
                   className="mt-3"

@@ -19,7 +19,7 @@ export default function SsdiOffsetGuide() {
       intro="If you’re approved for both FERS disability retirement and SSDI, your FERS check is reduced. Here’s the simplified first-year and second-year math — and why your net is lower than the gross."
       crumbs={[{ label: "SSDI Offset", href: "/ssdi-offset" }]}
       primaryCta={{ label: "Open the estimator", href: "/calculators/fers-disability-estimate" }}
-      secondaryCta={{ label: "Free offset worksheet", href: "/start-here?lm=ssdi-offset-quick-calculator-worksheet#free-checklist" }}
+      secondaryCta={{ label: "Free offset worksheet", href: "/free/ssdi-offset-quick-calculator-worksheet" }}
       faqs={faqs}
       sourceIds={["opm-disability", "ssa-disability"]}
       relatedProductSlugs={["ssdi-offset-worksheet-pack", "fers-disability-prep-toolkit"]}

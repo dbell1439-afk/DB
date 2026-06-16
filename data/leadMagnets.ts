@@ -13,6 +13,10 @@ export type LeadMagnet = {
   tag: string; // email-provider tag / segment
   icon: string; // emoji or icon key used by LeadMagnetCard
   featured?: boolean;
+  /** Longer intro shown on the dedicated /free/[slug] landing page. */
+  landingIntro?: string;
+  /** Section-by-section preview of what's inside the download. */
+  whatsInside?: string[];
 };
 
 export const leadMagnets: LeadMagnet[] = [
@@ -30,6 +34,16 @@ export const leadMagnets: LeadMagnet[] = [
     tag: "lm-readiness",
     icon: "✅",
     featured: true,
+    landingIntro:
+      "Most federal employees don’t lose benefits because they made the wrong call — they lose them because a document, a date, or a decision slipped through while everything else was on fire. This free checklist puts the whole picture on one page so you can move deliberately instead of reactively.",
+    whatsInside: [
+      "Document-gathering list (SF-50s, service history, benefit elections)",
+      "Dates to confirm in writing with HR before you separate",
+      "FEHB five-year continuation check",
+      "FEGLI reduction-election prep",
+      "TSP and beneficiary review reminders",
+      "Decisions to lock in before you file — and the order to make them",
+    ],
   },
   {
     slug: "fers-disability-document-checklist",
@@ -44,6 +58,15 @@ export const leadMagnets: LeadMagnet[] = [
     ],
     tag: "lm-fers-disability",
     icon: "🗂️",
+    landingIntro:
+      "A FERS disability retirement application lives or dies on documentation. This checklist organizes the evidence categories and forms commonly involved so you can build a complete, defensible package instead of a pile of paper.",
+    whatsInside: [
+      "Medical evidence categories to assemble",
+      "Agency forms commonly involved in the package",
+      "Statement-building prompts (your words matter)",
+      "The required SSDI application step — don’t skip it",
+      "A simple tracker for what’s done vs. outstanding",
+    ],
   },
   {
     slug: "ssdi-offset-quick-calculator-worksheet",

@@ -16,7 +16,7 @@ export default function RifSeparationGuide() {
       title="RIF / Separation Benefits Guide"
       intro="A Reduction in Force compresses your timelines. Move fast on the benefits questions below so you don’t lose options by default."
       crumbs={[{ label: "RIF / Separation", href: "/rif-separation" }]}
-      primaryCta={{ label: "Free separation survival checklist", href: "/start-here?lm=federal-medical-separation-survival-checklist#free-checklist" }}
+      primaryCta={{ label: "Free separation survival checklist", href: "/free/federal-medical-separation-survival-checklist" }}
       secondaryCta={{ label: "Document organizer toolkit", href: "/toolkits/federal-retirement-document-organizer" }}
       sourceIds={["opm-rif", "opm-retirement", "mspb"]}
       relatedProductSlugs={["federal-retirement-document-organizer", "medical-separation-timeline-builder"]}

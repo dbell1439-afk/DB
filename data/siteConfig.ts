@@ -4,8 +4,10 @@
  */
 
 export const siteConfig = {
-  name: "FedBenefits Navigator",
-  shortName: "FedBenefits Navigator",
+  // Swap your real brand name in one place: set NEXT_PUBLIC_BRAND_NAME in your
+  // env (or just edit the fallback string here). It propagates sitewide.
+  name: process.env.NEXT_PUBLIC_BRAND_NAME || "FedBenefits Navigator",
+  shortName: process.env.NEXT_PUBLIC_BRAND_NAME || "FedBenefits Navigator",
   tagline: "Federal Benefits Are Complicated. Your Next Step Shouldn’t Be.",
   description:
     "Plain-English guides, checklists, calculators, and decision tools for federal employees navigating OPM retirement, FERS disability, FEHB, FEGLI, SSDI offsets, and benefit delays. Educational information only.",
@@ -29,7 +31,7 @@ export const siteConfig = {
   cta: {
     primary: {
       label: "Get the Free OPM Retirement Readiness Checklist",
-      href: "/start-here#free-checklist",
+      href: "/free/opm-retirement-readiness-checklist",
     },
     secondary: {
       label: "Browse Toolkits",
@@ -62,9 +64,14 @@ export const primaryNav: NavItem[] = [
   { label: "Calculators", href: "/calculators" },
   { label: "Toolkits", href: "/toolkits" },
   { label: "Books", href: "/books" },
-  { label: "Resources", href: "/resources" },
+  { label: "Watch", href: "/watch" },
   { label: "Blog", href: "/blog" },
   { label: "Consultation", href: "/consultation" },
+];
+
+// Secondary links kept in the footer to avoid overcrowding the header.
+export const secondaryNav: NavItem[] = [
+  { label: "Recommended Resources", href: "/resources" },
 ];
 
 export const guideNav: NavItem[] = [

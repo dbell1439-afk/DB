@@ -19,7 +19,7 @@ export default function FersDisabilityGuide() {
       intro="What federal employees should understand before applying — eligibility, the SSDI requirement, the evidence that matters, and how to stay organized through a long process."
       crumbs={[{ label: "FERS Disability Retirement", href: "/fers-disability-retirement" }]}
       primaryCta={{ label: "Open the disability estimator", href: "/calculators/fers-disability-estimate" }}
-      secondaryCta={{ label: "Free document checklist", href: "/start-here?lm=fers-disability-document-checklist#free-checklist" }}
+      secondaryCta={{ label: "Free document checklist", href: "/free/fers-disability-document-checklist" }}
       faqs={faqs}
       sourceIds={["opm-disability", "ssa-disability", "opm-handbook"]}
       relatedProductSlugs={["fers-disability-prep-toolkit", "ssdi-offset-worksheet-pack"]}

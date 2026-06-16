@@ -19,7 +19,7 @@ export default function FegliHub() {
       intro="At retirement, FEGLI Basic asks you to choose a reduction option. The right answer depends on your coverage needs and budget over time. Here’s how to weigh it."
       crumbs={[{ label: "FEGLI", href: "/fegli" }]}
       primaryCta={{ label: "Open the FEGLI comparison tool", href: "/calculators/fegli-reduction" }}
-      secondaryCta={{ label: "Free decision worksheet", href: "/start-here?lm=fegli-retirement-decision-worksheet#free-checklist" }}
+      secondaryCta={{ label: "Free decision worksheet", href: "/free/fegli-retirement-decision-worksheet" }}
       faqs={faqs}
       sourceIds={["opm-fegli"]}
       relatedProductSlugs={["fegli-retirement-election-worksheet", "federal-retirement-document-organizer"]}

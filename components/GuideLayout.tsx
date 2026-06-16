@@ -86,7 +86,7 @@ export default function GuideLayout({
                 </p>
                 <p className="mt-1 text-sm text-slate-600">{leadMagnetLabel}</p>
                 <CTAButton
-                  href={`/start-here?lm=${leadMagnetSlug}#free-checklist`}
+                  href={`/free/${leadMagnetSlug}`}
                   variant="gold"
                   size="sm"
                   className="mt-3 w-full"

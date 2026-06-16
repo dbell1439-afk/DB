@@ -129,7 +129,7 @@ export default function OpmDelayTracker() {
 
       <div className="mt-6 flex flex-wrap gap-3">
         <Link
-          href="/start-here?lm=opm-delay-call-log-escalation-tracker#free-checklist"
+          href="/free/opm-delay-call-log-escalation-tracker"
           className="focus-ring inline-flex items-center rounded-full bg-federal px-5 py-2.5 text-sm font-semibold text-white hover:bg-federal-dark"
         >
           Download the free Call Log & Escalation Tracker

@@ -18,7 +18,7 @@ export default function FehbHub() {
       title="FEHB Open Season Decision Hub"
       intro="Open Season is the time to compare plans on what actually affects you — and to protect your ability to keep FEHB into retirement. Here’s how to decide."
       crumbs={[{ label: "FEHB", href: "/fehb" }]}
-      primaryCta={{ label: "Free comparison sheet", href: "/start-here?lm=fehb-open-season-comparison-sheet#free-checklist" }}
+      primaryCta={{ label: "Free comparison sheet", href: "/free/fehb-open-season-comparison-sheet" }}
       secondaryCta={{ label: "FEHB decision workbook", href: "/toolkits/fehb-open-season-decision-workbook" }}
       faqs={faqs}
       sourceIds={["opm-fehb", "opm-handbook"]}

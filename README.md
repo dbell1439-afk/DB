@@ -56,6 +56,9 @@ app/                    App Router pages + routes
   veteran-benefits/     Guide / decision hub pages
   calculators/          Index + 3 interactive calculators
   toolkits/             Store (filterable) + /[slug] product pages
+  books/                Books & coloring books (KDP product stream)
+  watch/                Faceless YouTube/TikTok content hub (10 scripts)
+  free/[slug]/          Dedicated lead-magnet landing pages (email funnel)
   resources/            Affiliate resource directory
   consultation/         Educational strategy-session intake
   blog/                 Index + /[slug] articles (12)
@@ -89,8 +92,13 @@ Everything is data-driven. Edit these files and the UI updates everywhere:
 - **`data/affiliateLinks.ts`** — affiliate registry powering `/go/[slug]`.
 - **`data/leadMagnets.ts`** — free downloads + email tags.
 - **`data/articles.ts`** — blog posts (structured: TL;DR, mistakes, docs, etc.).
+- **`data/books.ts`** — books & coloring books (Amazon KDP product stream).
+- **`data/videos.ts`** — faceless YouTube/TikTok scripts shown on `/watch`.
 - **`data/faqs.ts`** — FAQ groups (also emitted as FAQPage JSON-LD).
 - **`data/sources.ts`** — official OPM/SSA/TSP/IRS source links.
+
+To rebrand, set `NEXT_PUBLIC_BRAND_NAME` (or edit the fallback in
+`data/siteConfig.ts`) — it propagates sitewide.
 
 ## Wiring up integrations (before launch)
 

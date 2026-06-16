@@ -3,6 +3,7 @@ import {
   footerLegalNav,
   guideNav,
   primaryNav,
+  secondaryNav,
   siteConfig,
 } from "@/data/siteConfig";
 
@@ -32,7 +33,7 @@ export default function Footer() {
           <div>
             <h2 className="text-sm font-semibold text-white">Explore</h2>
             <ul className="mt-3 space-y-2 text-sm">
-              {primaryNav.map((i) => (
+              {[...primaryNav, ...secondaryNav].map((i) => (
                 <li key={i.href}>
                   <Link href={i.href} className="hover:text-gold-light">
                     {i.label}

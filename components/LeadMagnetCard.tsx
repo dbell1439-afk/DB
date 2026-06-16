@@ -30,7 +30,7 @@ export default function LeadMagnetCard({ magnet }: Props) {
         ))}
       </ul>
       <Link
-        href={`/start-here?lm=${magnet.slug}#free-checklist`}
+        href={`/free/${magnet.slug}`}
         className="focus-ring mt-5 inline-flex items-center justify-center rounded-full bg-federal px-5 py-2.5 text-sm font-semibold text-white hover:bg-federal-dark"
       >
         Get this free download

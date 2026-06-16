@@ -14,6 +14,7 @@ export default function StickyMobileCTA() {
         >
           Free Checklist
         </Link>
+        {/* primary.href now points to the dedicated /free funnel */}
         <Link
           href={siteConfig.cta.secondary.href}
           className="focus-ring rounded-full border border-federal/30 px-4 py-2.5 text-center text-sm font-semibold text-federal"

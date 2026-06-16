@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { siteConfig } from "@/data/siteConfig";
 import { articles } from "@/data/articles";
 import { products } from "@/data/products";
+import { leadMagnets } from "@/data/leadMagnets";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = siteConfig.url;
@@ -23,6 +24,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/calculators/opm-delay-tracker",
     "/toolkits",
     "/books",
+    "/watch",
     "/resources",
     "/consultation",
     "/blog",
@@ -54,5 +56,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  return [...staticRoutes, ...articleRoutes, ...productRoutes];
+  const leadMagnetRoutes = leadMagnets.map((m) => ({
+    url: `${base}/free/${m.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.8,
+  }));
+
+  return [
+    ...staticRoutes,
+    ...articleRoutes,
+    ...productRoutes,
+    ...leadMagnetRoutes,
+  ];
 }

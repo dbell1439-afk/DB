@@ -52,7 +52,7 @@ export default function RetirementTimeline() {
       title="Federal Retirement Timeline"
       intro="From application to your first finalized check, here’s the sequence to expect — and the milestones worth documenting along the way."
       crumbs={[{ label: "Federal Retirement Timeline", href: "/retirement-timeline" }]}
-      primaryCta={{ label: "Free readiness checklist", href: "/start-here?lm=opm-retirement-readiness-checklist#free-checklist" }}
+      primaryCta={{ label: "Free readiness checklist", href: "/free/opm-retirement-readiness-checklist" }}
       secondaryCta={{ label: "Track an OPM delay", href: "/opm-delay-survival" }}
       sourceIds={["opm-retirement", "opm-handbook"]}
       relatedProductSlugs={["federal-retirement-document-organizer", "opm-delay-escalation-tracker"]}

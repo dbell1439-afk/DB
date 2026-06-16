@@ -17,7 +17,7 @@ export default function VeteranBenefitsGuide() {
       intro="Veterans in federal service often touch multiple benefit systems at once. Here are the overlap areas to watch and keep clearly documented — none of this is advice, just a map of where to look."
       crumbs={[{ label: "Veteran Federal Employees", href: "/veteran-benefits" }]}
       primaryCta={{ label: "See the veteran bundle", href: "/toolkits/veteran-federal-employee-bundle" }}
-      secondaryCta={{ label: "Free readiness checklist", href: "/start-here?lm=opm-retirement-readiness-checklist#free-checklist" }}
+      secondaryCta={{ label: "Free readiness checklist", href: "/free/opm-retirement-readiness-checklist" }}
       sourceIds={["opm-retirement", "opm-handbook", "ssa-disability"]}
       relatedProductSlugs={["veteran-federal-employee-bundle", "fers-disability-prep-toolkit"]}
       emailTag="newsletter"
